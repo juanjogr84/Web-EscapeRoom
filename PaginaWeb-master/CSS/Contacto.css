@@ -1,0 +1,349 @@
+/* CSS CONTACTO */
+
+/* TODO */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    /* outline: 1px solid aqua; */
+}
+
+/* BODY */
+body {
+    width: auto;
+    height: auto;
+    background: linear-gradient(to right, rgb(67, 23, 117), #160600);
+}
+
+
+/* HEADER */
+header{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+/* MAIN */
+main {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width:100%;
+    height: auto;
+}
+
+
+ /* FOOTER */
+ footer{
+    margin-top: 10%;
+    width: 100%;
+    height: 178px;
+ }
+
+
+ /* SECCION */
+ section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+ }
+
+
+
+ /* SELECTOR POR ETIQUETA */
+h1 {
+    color:rgb(255, 243, 232);
+    font-size: 35px;
+    font-family: 'Bungee Inline',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nabla', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin: auto;
+}
+
+h3 {
+    text-align: left;
+    text-decoration: underline;
+    font-family: 'Gruppo','Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+
+ul{
+    margin-left: 12%;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 35px;
+    font-family: 'Megrim','Bungee Inline','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: bisque;
+    padding-left: 20px;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-right: 3px solid #932C21;
+}
+
+
+ul li a{
+    text-decoration: none;
+}
+
+
+ul li:last-child{
+    border-right: none ;
+}
+
+
+ul li :hover{
+    font-weight: 900;
+}
+
+article div{
+    /*width: 600px;*/
+}
+
+form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* SELECTOR POR ID */
+#logo{
+    display: block;
+    float: center;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding-top: 20px;
+    border-radius: 50%;
+}
+
+
+#logo_footer{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+#header{
+    background-image: radial-gradient(circle, #651E31 0%, BLACK 100%);
+}
+
+
+#footer{
+    border-top: 1px solid #160600;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+#footer .parrafo{
+    float: left;
+    font-size: 20px;
+    line-height: 150px;
+    text-align: center;
+}
+
+#input_form{
+    color:black
+}
+
+#mapa{
+    width: 100%;
+}
+
+
+/* SELECTOR POR CLASE */
+.parrafo{
+    font-family: 'Gruppo','Courier New', Courier, monospace;
+    text-align: justify;
+    color: white;
+    font-size: 23px;
+    margin-top: 30px;
+    margin-bottom: 10px;;
+
+}
+
+.parrafo_footer{
+    font-family: 'Gruppo','Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.clearboth{
+    clear: both;
+}
+
+.boton_enviar{
+    padding-left: 8px;
+    padding-top: 3px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    background-color: #160600;
+}
+
+
+/*Responsive design*/
+/*Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
+@media screen and (min-width:1300px){
+    #contenedor{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    article{
+        width: 40%
+    }
+
+    aside{
+        margin-right: 15%;
+        width: 40%
+    }
+}
+
+ /* TABLET HORIZONTAL*/
+ /* Referencia: Galaxy Tab S4 en google chrome (1138px x 712px)*/
+@media screen and (max-width: 1138px){
+    *{
+        color: yellow !important
+    }
+    
+    #mapa{
+        width: 90%
+    }
+
+    .parrafo{
+        padding-right: 10%
+    }
+
+}
+
+/* TABLET VERTICAL */
+/* Referencia: Galaxy Tab S4 en Google Chrome (712px x 1138px) */
+@media screen and (max-width: 712px){
+    *{
+        color: green !important
+    }
+    
+    #mapa{
+        width: 90%
+    }
+
+    .parrafo{
+        padding-right: 10%
+    }
+}
+
+/* TELEFONO HORIZONTAL */
+/* Referencia: iPhone SE (667px x 375px) */
+@media screen and (max-width: 667px) {
+    *{
+        color: orangered !important
+    }
+
+    h3{
+        padding-right: 10%
+    }
+
+    #logo_footer{
+        width: 120px;
+        height: 120px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+
+    }
+
+    footer p{
+        margin-top: 20px !important;
+        width: 60%;
+        font-size: 14px !important
+
+    }
+}
+
+/* TELEFONO VERTICAL */
+/* Referencia: iPhone SE (375px X 667px) */
+@media screen and (max-width: 375px){
+    *{
+        color: lightblue !important;
+    }
+    #contacto {
+        width: 90%;
+    }
+
+    section{
+        margin-left: 10% !important;
+    }
+
+    form{
+        max-width: 300px;
+    }
+    textarea{
+        max-width: 90%;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    
+    #logo_footer{
+        width: 100px;
+        height: 100px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    footer p{
+        float:right !important;
+        line-height: 15px !important;
+        padding: 0 !important;
+        margin: 50px auto !important
+    }
+}

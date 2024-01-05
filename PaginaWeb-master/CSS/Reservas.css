@@ -1,0 +1,407 @@
+/* CSS RESERVAS */
+
+/* TODO */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    /* outline: 1px solid aqua; */
+}
+
+/* BODY */
+body {
+    position: relative;
+    /*width: 1903px;*/
+    width: 100%;
+    background: linear-gradient(to right, rgb(67, 23, 117), #160600);
+}
+
+/* HEADER */
+header{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+
+/* MAIN */
+main {
+    position: relative;
+    float: left;
+    /*width: 1280px;*/
+    width:70%;
+}
+
+/* ASIDE */
+aside {
+    float:right;
+    /*width: 300px;*/
+    width:16%;
+    height: 1000px;
+    margin-top: 10px;
+    margin-right: 100px;
+ }
+
+
+ /* FOOTER */
+ footer{
+    position: relative;
+    float: left;
+    width: 100%;
+ }
+
+
+ /* SECCION */
+ section{
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+ }
+
+ section header{
+    height: 70px;
+    margin-bottom: 20px;
+ }
+
+
+form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+option{
+    color:black
+}
+
+
+
+/* SELECTOR POR ETIQUETA */
+h1 {
+    color:rgb(255, 243, 232);
+    font-size: 31px;
+    font-family: 'Bungee Inline',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nabla', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin: auto;
+}
+
+
+h5 {
+    font-family: 'Gruppo','Courier New', Courier, monospace;
+    text-align: justify;
+    font-size: 23px;
+}
+
+ul{
+    margin-left: 12%;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 35px;
+    font-family: 'Megrim','Bungee Inline','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: bisque;
+    padding-left: 20px;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-right: 3px solid #932C21;
+}
+
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li:last-child{
+    border-right: none ;
+}
+
+ul li :hover{
+    font-weight: 900;
+}
+
+
+/* SELECTOR POR ID */
+#logo{
+    display: block;
+    float: center;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding-top: 20px;
+    border-radius: 50%;
+}
+
+
+#logo_footer{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+#logoquimico{
+    float: left;
+    width: 250px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+
+#logolux{
+    float: left;
+    width: 250px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+
+#logopirata{
+    float: left;
+    width: 250px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+
+}
+
+
+#header{
+    background-image: radial-gradient(circle, #651E31 0%, BLACK 100%);
+}
+
+
+#formulario_reservas{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer{
+    border-top: 1px solid #160600;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+#footer .parrafo{
+    float: left;
+    font-size: 20px;
+    text-align: center;
+}
+
+#input_form{
+    color:black;
+}
+
+
+
+/* SELECTOR POR CLASE */
+.parrafo{
+    float: right;
+    width: 800px;
+    font-family: 'Gruppo','Courier New', Courier, monospace;
+    text-align: justify;
+    color: white;
+    font-size: 23px;
+    margin-top: 30px;
+    padding-right: 60px;
+
+}
+
+.parrafo_footer{
+    font-family: 'Gruppo','Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.clearboth{
+    clear: both;
+}
+
+.boton_enviar{
+    padding-left: 8px;
+    padding-top: 3px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    font-size: 15px;
+    background-color: #160600;
+}
+
+
+/*Responsive design*/
+/*Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
+@media screen and (min-width:1300px){
+    #contenedor{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    section footer{
+        width: 60%
+    }
+
+}
+
+ /* TABLET HORIZONTAL*/
+ /* Referencia: Galaxy Tab S4 en google chrome (1138px x 712px)*/
+ @media screen and (max-width: 1138px){
+    *{
+        color: yellow !important
+    }
+
+    body{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    section{
+        display:flex;
+        flex-direction: column;
+    }
+
+    aside{
+        margin-right: 150px;
+    }
+
+    aside img{
+        width: 150px;
+        height: 150px;
+    }
+
+    footer{
+        display: flex;
+    }
+
+ }
+
+ /* TABLET VERTICAL */
+/* Referencia: Galaxy Tab S4 en Google Chrome (712px x 1138px) */
+@media screen and (max-width: 712px){
+    *{
+        color: green !important
+    }
+    #contenedor{
+        width: 100%;
+        height: 1800px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea{
+        width: 500px
+    }
+
+    h1{
+        font-size: 1.75em;
+    }
+
+    aside{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    aside div{
+        height:150px;
+    }
+
+    aside img{
+        margin: 1px !important;
+        width: 100% !important;
+    }
+
+    .parrafo{
+        line-height: 20px;
+    }
+
+}
+
+/* TELEFONO HORIZONTAL */
+/* Referencia: iPhone SE (667px x 375px) */
+@media screen and (max-width: 667px){
+    *{
+        color: orangered !important
+    }
+    h1{
+        font-size: 1.5em !important;
+    }
+}
+
+/* TELEFONO VERTICAL */
+/* Referencia: iPhone SE (375px X 667px) */
+@media screen and (max-width: 375px){
+    *{
+        color: lightblue !important;
+    }
+
+    textarea{
+        max-width: 90%;
+    }
+
+    section{
+        margin-left: 10% !important;
+    }
+
+    #logo_footer{
+        width: 100px;
+        height: 100px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+
+    }
+    main{
+        width: 90%;
+    }
+
+    section header{
+        margin-bottom: 15px !important;
+        font-size: 0.85em
+    }
+   
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    aside{
+        margin-top: 1%;
+        height: 350px
+    }
+
+    footer p{
+        float:right !important;
+        line-height: 15px !important;
+        padding: 0 !important;
+        margin: 50px auto !important
+    }
+    .opciones{
+        font-size: 11px;
+    }
+}

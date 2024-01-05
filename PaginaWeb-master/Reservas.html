@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/Reservas.css">
+    <link rel="stylesheet" href="CSS/Desplegable.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <!-- INICIO HEADER -->
+        <header id="header">
+            <!-- INICIO NAV -->
+            <nav class="menu">
+                <input checked="checked" class="menu-toggler" type="checkbox">
+                <img id="logo_menu" src="img/logo.png">
+                <label for="menu-toggler"> </label>
+                <ul>
+                    <li class="menu-item">
+                        <a href="Noticias.html"> <img id="news" src="img/5.png"/> </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="QuienesSomos.html"> <img id="us" src="img/3.png"/></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="Contacto.html"><img id="contact" src="img/9.png"/></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="Reservas.html"> <img id="calendar" src="img/6.png"/></a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="EscapeRooms.html""> <img id="scape" src="img/4.png"/></a>
+                  </li>
+                  <li class=" menu-item">
+                            <a href="index.html"><img id="inicio" src="img/1.png"/></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- FIN NAV -->
+        </header>
+        <!-- FIN HEADER -->
+
+        <!-- INICIO MAIN -->
+        <main>
+            <!-- INICIO SECCION PRINCIPAL -->
+            <section>
+                <!-- HEADER SECCION PRINCIPAL -->
+                <header>
+                    <h1> Reserva tu experiencia </h1>
+                </header>
+                <!-- FIN HEADER SECCION PRINCIPAL -->
+
+                <!-- ARTICULO SECCION PRINCIPAL -->
+                <article>
+                    <!-- Inicio del formulario de reserva-->
+                    <div id="formulario_reservas">
+                        <form action="Reservar.jsp" method="get">
+                            <label for="nombre">Nombre :</label>
+                            <input id="input_form" type="text" name="nombre" placeholder="Introduce tu nombre" required autofocus />
+                            </br> </br>
+                            <label for="apellidos">Apellidos :</label>
+                            <input id="input_form" type="text" name="apellidos" placeholder="Introduce tus apellidos" required />
+                            </br> </br>
+                            <label for="personas">Número de personas :</label>
+                            <input id="input_form" type="number" min="2" max="8" step="1" name="personas"
+                                placeholder="Número de personas" required />
+                            </br> </br>
+                            <label for="experiencia">Elige la experiencia :</label>
+                            </br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input id="input_form" type="radio" name="experiencia" value="Quimico" /> <label class="opciones"> DESASTRE QUÍMICO</label>
+                            </br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input type="radio" name="experiencia" value="Lux" /><label class="opciones"> LUX</label> 
+                            </br>
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input type="radio" name="experiencia" value="Pirata" /><label class="opciones"> EL TESORO MALDITO</label>
+                            </br> </br>
+                            <label for="fecha">Elige la fecha :</label>
+                            <input id="input_form" type="date" name="fecha" required />
+                            </br> </br>
+                            <label for="hora">Escoge la hora :</label>
+                            <select id="input_form" name="diayhora">
+                                <option value="10"> 10:00 </option>
+                                <option value="12"> 12:00 </option>
+                                <option value="14"> 14:00 </option>
+                                <option value="16"> 16:00 </option>
+                                <option value="18"> 18:00 </option>
+                                <option value="20"> 20:00 </option>
+                                <option value="22"> 22:00 </option>
+                            </select>
+                            </br> </br>
+                            <label for="email">Email :</label>
+                            <input id="input_form" type="text" name="email" placeholder="Email" required />
+                            </br> </br>
+                            <label for="observaciones">Observaciones :</label>
+                            </br> <textarea rows="5" cols="80" name="observaciones"
+                                placeholder="Escribe aquí tu comentario"></textarea>
+                            </br> </br>
+                            <input id="input_form" type="checkbox" name="responsabilidad" required /> Marcando esta casilla, confirmamos que en el grupo hay una persona mayor de edad.
+                            </br> </br>
+                            <input class="boton_enviar" type="submit" value="Enviar" />
+                            <input class="boton_enviar" type="reset" />
+                            </br> </br>
+                        </form>
+                    </div>
+                    <!-- Fin del formulario de reserva-->
+                </article>
+                <!-- FIN ARTICULO SECCION PRINCIPAL -->
+
+                <!-- PIE SECCION PRINCIPAL -->
+                <footer>
+                    <h5> Una vez realizada la reserva, se enviarán los datos correspondientes de la experiencia a tu
+                        Email.
+                        No dudes en revisarlo antes de comenzar la aventura.
+                    </h5>
+                </footer>
+                <!-- FIN PIE SECCION PRINCIPAL -->
+            </section>
+            <!-- FIN SECCION PRINCIPAL -->
+        </main>
+        <!-- FIN MAIN -->
+
+        <!-- INICIO ASIDE -->
+        <aside id="aside">
+            <div id="exp1">
+                <img id="logoquimico" src="img/quimico.png" alt="logoquimico">
+            </div>
+            <div id="exp2">
+                <img id="logolux" src="img/lux.png" alt="logolux">
+            </div>
+            <div id="exp3">
+                <img id="logopirata" src="img/pirata.png" alt="logopirata">
+            </div>
+        </aside>
+        <!-- FIN ASIDE -->
+        <!-- INICIO FOOTER -->
+        <footer id="footer">
+            <img id="logo_footer" src="img/logo.png" alt="logo" title="Logo JUMISHE" />
+            <p class="parrafo">Todos los derechos reservados &copy;  Sheila Orejuela Valenzuela</p>
+        </footer>
+        <!-- FIN FOOTER -->
+    </div>
+</body>
+
+
+
+</body>
+
+</html>

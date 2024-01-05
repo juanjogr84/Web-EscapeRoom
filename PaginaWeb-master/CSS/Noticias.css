@@ -1,0 +1,318 @@
+/* CSS NOTICIAS */
+
+/* TODO */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    /* outline: 1px solid aqua; */
+}
+
+/* BODY */
+body {
+    position: relative;
+    /*width: 1903px;*/
+    width: 100%;
+    background: linear-gradient(to right, rgb(67, 23, 117), #160600);
+}
+
+/* HEADER */
+header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+
+/* MAIN */
+main {
+    position: relative;
+    float: left;
+    /*width: 1280px;*/
+    width: 70%;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+/* ASIDE */
+aside {
+    float: right;
+    /*width: 300px;*/
+    width: 16%;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+
+/* FOOTER */
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+/* SECCION */
+section {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+
+/* SELECTOR POR ETIQUETA */
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nabla', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin: auto;
+}
+
+
+ul {
+    margin-left: 12%;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 35px;
+    font-family: 'Megrim', 'Bungee Inline', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: bisque;
+    padding-left: 20px;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-right: 3px solid #932C21;
+}
+
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li:last-child {
+    border-right: none;
+}
+
+ul li :hover {
+    font-weight: 900;
+}
+
+
+/* SELECTOR POR ID */
+#logo {
+    display: block;
+    float: center;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    padding-top: 20px;
+    border-radius: 50%;
+}
+
+
+#logo_footer {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+#header {
+    background-image: radial-gradient(circle, #651E31 0%, BLACK 100%);
+}
+
+
+#banner {
+    width: 300px;
+    margin-top: 50px;
+}
+
+
+#footer {
+    border-top: 1px solid #160600;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+#footer .parrafo {
+    float: left;
+    font-size: 20px;
+    line-height: 150px;
+    text-align: center;
+}
+
+/* SELECTOR POR CLASE */
+.parrafo {
+    float: right;
+    width: 800px;
+    font-family: 'Gruppo', 'Courier New', Courier, monospace;
+    text-align: justify;
+    color: white;
+    font-size: 23px;
+    margin-top: 30px;
+    padding-right: 60px;
+
+}
+
+.parrafo_footer {
+    font-family: 'Gruppo', 'Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.clearboth {
+    clear: both;
+}
+
+
+/* RESPONSIVE*/
+/* Adaptación de ancho fijo de resoluciones de más de 1300px de ancho.*/
+@media screen and (min-width: 1300px) {
+    main {
+        width: 73%;
+        margin-left: 5%;
+    }
+
+    aside {
+        float: left;
+        width: 15%;
+        margin-right: 3%;
+    }
+
+    #proximamente {
+        width: 100%;
+    }
+
+    #banner {
+        width: 100%;
+    }
+}
+
+/* TABLET HORIZONTAL */
+/* He cogido de referencia: Galaxy Tab S4 en Google Chrome (1138px x 712px) */
+@media screen and (max-width: 1138px) {
+    section{
+        margin: 15px;
+    }
+
+    main {
+        width: 72%;
+        margin-left: 5%;
+    }
+
+    aside {
+        float: left;
+        width: 15%;
+        margin-right: 3%;
+    }
+
+    #proximamente {
+        width: 100%;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    #footer .parrafo {
+        width: 60%;
+    }
+}
+
+
+/* TABLET VERTICAL */
+/* He cogido de referencia: Galaxy Tab S4 en Google Chrome (712px x 1138px) */
+@media screen and (max-width: 712px) {
+    main {
+        width: 80%;
+        margin-left: 1%;
+        margin-right: 15px;
+    }
+
+    aside {
+        float: left;
+        width: 15%;
+        margin-right: 1%;
+    }
+
+    #proximamente {
+        width: 100%;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    #logo_footer {
+        width: 100px;
+        height: 100px;
+        margin-left: 2%;
+    }
+
+    #footer .parrafo {
+        width: 65%;
+        font-size: 1em;
+        padding-right: 0px;
+        line-height: 55px;
+    }
+}
+
+
+/* TELEFONO HORIZONTAL */
+/* He cogido de referencia: iPhone SE (667px x 375px) */
+@media screen and (max-width: 667px) {
+    #footer .parrafo {
+        width: 65%;
+        font-size: .9em;
+        padding-right: 0px;
+        line-height: 55px;
+    }
+}
+
+
+/* TELEFONO VERTICAL */
+/* He cogido de referencia: iPhone SE (375px X 667px) */
+@media screen and (max-width: 375px) {
+
+    main {
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 5px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    #proximamente {
+        width: 100%;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    #footer .parrafo {
+        font-size: .5em;
+        width: 60%;
+        line-height: 60px;
+    }
+
+    #logo_footer {
+        margin-right: 0px;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+}
